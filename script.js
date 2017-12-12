@@ -14,6 +14,16 @@ var flashCardQA = [
       "What is a function declaration compared to a function expression?",
     answer:
       '"declaration: function myFunc(){ ... } expression: var myFunc = function() { ...}"'
+  },
+  {
+    question: "What is a callback function?",
+    answer:
+      "A callback function is any function to be called at a later time, whether by the browser in the event-handling phase or by other code"
+  }
+  {
+    question: "What is a closure?",
+    answer:
+      "A closure is a function that closes over its environment. It has access to the state of the environment, but the variables inside the closure are private.\n Example: (function (){var scopeVar = 'Hello';\n (function closure(){ var closureVar = ' World'; console.log(scopeVar + closureVar);\n })();\n})();\n scope Var is accessible inside the outer and the inner function, but closureVar is only accessible inside the inner function."
   }
 ];
 
