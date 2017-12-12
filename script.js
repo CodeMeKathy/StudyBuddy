@@ -18,7 +18,7 @@ var flashCard = [
 ];
 
 var frontCard = document.getElementsByClassName("frontCard")[0]
-var backCard = document.getElementsByClassName("backCard")[0];
+var backCard = document.getElementsByClassName("backCard")[0]
  
 // Reference: https://stackoverflow.com/questions/19197140/javascript-append-text-into-div
 
@@ -30,3 +30,15 @@ frontCard.innerHTML += flashCard[2].question3;
 
 backCard.innerHTML += flashCard[0].answer1;
 
+// let randomIndex = Math.floor(Math.random()*flashCard.length)
+    //Invokes random question generator
+
+document.addEventListener('keydown', function nextCard() { const keyUp = nextCard.38;
+    //Invoke EventListener for keyUP
+    
+})
+
+document.addEventListener('keydown', function nextCard() { const keyUp = nextCard.38;
+    //Invoke EventListener for keyDown
+    
+})
