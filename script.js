@@ -1,5 +1,10 @@
 var flashCardQA = [
   {
+    question: "JavaScript Fundamentals",
+    answer:
+      ""
+  },
+  {
     question: "What is JavaScript?",
     answer:
       "JavaScript (JS) is a programming language mostly used client-side to dynamically script webpages, but often also server -side, using packages such as Node.js."
@@ -19,7 +24,7 @@ var flashCardQA = [
     question: "What is a callback function?",
     answer:
       "A callback function is any function to be called at a later time, whether by the browser in the event-handling phase or by other code"
-  }
+  },
   {
     question: "What is a closure?",
     answer:
@@ -40,27 +45,54 @@ frontCard.innerHTML = flashCardQA[0].question;
 
 // backCard.innerHTML += flashCardQA[0].answer1;
 
-let randomIndex = Math.floor(Math.random()*flashCardQA.length)
-    //Invokes random question generator
+
+// for (var i = 0; i < flashCardQA.length; i++) { 
+//     console.log(flashCardQA[i])
+//     frontCard.innerHTML = flashCardQA[i].question
+//     backCard.innerHTML = flashCardQA[i].answer
+
+// }
+// // Create an index to pass through the questions in order 
 
 let index = 0
+// let randomIndex = Math.floor(Math.random()*flashCardQA.length)
+//     //Invokes random question generator
 
 document.addEventListener('keydown', function(ev) { 
     if (ev.key === 'ArrowUp') {
+        // next question
         console.log(ev);
-        frontCard.setAttribute('hidden', true);
-        backCard.removeAttribute("hidden");
+        backCard.setAttribute('hidden', true);
+        frontCard.removeAttribute("hidden");
         index++
+        // function showFront() {
+        //     show the front of the card
+        //     call showBack
+        // }
+        // function showBack() {
+        //     on 2nd arrowup 
+        //     show the back of the card
+        //     index++
+        // }
         frontCard.innerHTML = flashCardQA[index].question;
-        //if add another action =, add if statement
+        // Add another action === add if statement
     }
     if (ev.key === 'ArrowDown'){
+        // previous question
         console.log(ev);
-        backCard.setAttribute("hidden", true);
-        frontCard.removeAttribute("hidden");
-        //if add another action =, add if statement
+        index--
+        // function showFront() {
+        //     show the front of the card
+        //     call showBack
+        // }
+        // function showBack() {
+        //     on 2nd arrowup 
+        //     show the back of the card
+        //     index++
+        // }
+        frontCard.setAttribute("hidden", true);
+        backCard.removeAttribute("hidden");
+       
     }
-    //Invoke EventListener for keyUP
-        //Create a function for the flipCard motion
     
 })
