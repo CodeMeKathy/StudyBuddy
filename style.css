@@ -1,0 +1,65 @@
+header {
+
+    text-align: center;
+}
+
+.frontCard {
+
+    background-color: #8a2be2;
+    height: 200px;
+    width: 200px;
+}
+
+.backCard {
+
+    background-color: #ff69b4;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+footer {
+  
+    /* margin-top: 38%; */
+    margin-top: 125px;
+    /* margin-bottom: 2px; */
+    padding: 0 20px 0 20px;
+    background-color: #0d2c40;
+    font-size: 14px;
+    letter-spacing: .08em;
+    font-weight: 300;
+      
+}
+
+.copyright {
+    float: left;
+
+}
+
+footer p {
+
+    float: right;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: .08em;
+    font-weight: 100;
+    /* text-decoration: uppercase; */
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
+    }
+
+.name {
+    color: #f15b31;
+    font-weight: 100;
+}
