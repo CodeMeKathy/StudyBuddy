@@ -1,4 +1,4 @@
-var flashCard = [
+var flashCardQA = [
   {
     question1: "What is JavaScript?",
     answer1:
@@ -17,28 +17,37 @@ var flashCard = [
   }
 ];
 
-var frontCard = document.getElementsByClassName("frontCard")[0]
+var frontCard = document.getElementsByClassName("frontCard")[0];
 var backCard = document.getElementsByClassName("backCard")[0]
  
 // Reference: https://stackoverflow.com/questions/19197140/javascript-append-text-into-div
 
-frontCard.innerHTML = flashCard[0].question1;
+frontCard.innerHTML = flashCardQA[0].question1;
 
-frontCard.innerHTML += flashCard[1].question2;
+frontCard.innerHTML += flashCardQA[1].question2;
 
-frontCard.innerHTML += flashCard[2].question3;
+frontCard.innerHTML += flashCardQA[2].question3;
 
-backCard.innerHTML += flashCard[0].answer1;
+backCard.innerHTML += flashCardQA[0].answer1;
 
-// let randomIndex = Math.floor(Math.random()*flashCard.length)
+let randomIndex = Math.floor(Math.random()*flashCardQA.length)
     //Invokes random question generator
 
-document.addEventListener('keydown', function nextCard() { const keyUp = nextCard.38;
+document.addEventListener('keydown', function(ev) { 
+    if (ev.key === 'ArrowUp') {
+        console.log(ev);
+        //if add another action =, add if statement
+    }
     //Invoke EventListener for keyUP
+        //Create a function for the flipCard motion
     
 })
 
-document.addEventListener('keydown', function nextCard() { const keyUp = nextCard.38;
+document.addEventListener('keydown', function(ev) { 
+    if (ev.key === 'ArrowDown'){
+        console.log(ev);
+        //if add another action =, add if statement
+    }})
     //Invoke EventListener for keyDown
-    
-})
+        //Create a function for the flipCard motion
+        
