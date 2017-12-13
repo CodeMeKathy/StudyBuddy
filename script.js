@@ -39,13 +39,6 @@ var backCard = document.getElementsByClassName("backCard")[0]
 
 frontCard.innerHTML = flashCardQA[0].question;
 
-// frontCard.innerHTML += flashCardQA[1].question2;
-
-// frontCard.innerHTML += flashCardQA[2].question3;
-
-// backCard.innerHTML += flashCardQA[0].answer1;
-
-
 // for (var i = 0; i < flashCardQA.length; i++) { 
 //     console.log(flashCardQA[i])
 //     frontCard.innerHTML = flashCardQA[i].question
@@ -56,7 +49,8 @@ frontCard.innerHTML = flashCardQA[0].question;
 
 let index = 0
 // let randomIndex = Math.floor(Math.random()*flashCardQA.length)
-//     //Invokes random question generator
+//     // === Invokes random question generator
+
 
 document.addEventListener('keydown', function(ev) { 
     if (ev.key === 'ArrowUp') {
@@ -65,15 +59,7 @@ document.addEventListener('keydown', function(ev) {
         backCard.setAttribute('hidden', true);
         frontCard.removeAttribute("hidden");
         index++
-        // function showFront() {
-        //     show the front of the card
-        //     call showBack
-        // }
-        // function showBack() {
-        //     on 2nd arrowup 
-        //     show the back of the card
-        //     index++
-        // }
+        
         frontCard.innerHTML = flashCardQA[index].question;
         // Add another action === add if statement
     }
@@ -81,18 +67,15 @@ document.addEventListener('keydown', function(ev) {
         // previous question
         console.log(ev);
         index--
-        // function showFront() {
-        //     show the front of the card
-        //     call showBack
-        // }
-        // function showBack() {
-        //     on 2nd arrowup 
-        //     show the back of the card
-        //     index++
-        // }
-        frontCard.setAttribute("hidden", true);
-        backCard.removeAttribute("hidden");
+        backCard.setAttribute("hidden", true);
+        frontCard.removeAttribute("hidden");
+        frontCard.innerHTML = flashCardQA[index].question;
        
     }
     
+    if (ev.key === 'Enter'){
+        frontCard.setAttribute("hidden", true);
+        backCard.removeAttribute("hidden");
+    }
+
 })
