@@ -38,12 +38,6 @@ var backCard = document.getElementsByClassName("backCard")[0];
 
 frontCard.innerHTML = flashCardQA[0].question;
 
-// for (var i = 0; i < flashCardQA.length; i++) {
-//     console.log(flashCardQA[i])
-//     frontCard.innerHTML = flashCardQA[i].question
-//     backCard.innerHTML = flashCardQA[i].answer
-
-// }
 // // Create an index to pass through the questions in order
 
 let index = 0;
@@ -51,9 +45,9 @@ let index = 0;
 //     // === Invokes random question generator
 
 document.addEventListener("keydown", function(ev) {
-//   debugger;
+
   if (ev.key === "ArrowUp") {
-    // Kevon assisted with index +1git 
+    // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
     //   console.log("index is " + index);
     //   console.log("flashCardQA.length is " + flashCardQA.length);
@@ -77,87 +71,30 @@ document.addEventListener("keydown", function(ev) {
   // // else {
   // Add another action === add if statement
 
-  if (ev.key === "ArrowDown") {
+  if (ev.key === 'ArrowDown') {
+    // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
       
-      frontCard.removeAttribute("hidden");
-      frontCard.style.background = "green";
-      frontCard.innerHTML = "ya done";
+      frontCard.removeAttribute('hidden');
+      frontCard.style.background = 'pink';
+      frontCard.innerHTML = 'ya done';
       console.log("arrow down Finished at " + index);
     } else {
       // previous question
       console.log(ev);
       index--;
-      backCard.setAttribute("hidden", true);
+      backCard.setAttribute('hidden', true);
       frontCard.removeAttribute("hidden");
       frontCard.innerHTML = flashCardQA[index].question;
     } // end of else
   }
 
-  if (ev.key === "Enter") {
-    frontCard.setAttribute("hidden", true);
-    backCard.removeAttribute("hidden");
+  if (ev.key === 'Enter') {
+    frontCard.setAttribute('hidden', true);
+    backCard.removeAttribute('hidden');
     backCard.innerHTML = flashCardQA[index].answer;
   }
-  //     document.addEventListener('keydown', function(ev) {
-  //     if (ev.key === 'ArrowDown'){
-  //         if (index >= flashCardQA.length) {
-  //           //   frontCard.innerHTML = newCardDeck[index2].question;
-  //           //   index2++;
-  //           frontCard.removeAttribute("hidden");
-  //           frontCard.style.background = "green";
-  //           frontCard.innerHTML = "ya done";
-  //           console.log("arrow down Finished at " + index);
-  //         } else {
-  //         // previous question
-  //         console.log(ev);
-  //         index--
-  //         backCard.setAttribute('hidden', true);
-  //         frontCard.removeAttribute('hidden');
-  //         frontCard.innerHTML = flashCardQA[index].question;
-  //         } // end of else
-
-  //     }
-
-  //     if (ev.key === 'Enter'){
-  //         frontCard.setAttribute("hidden", true);
-  //         backCard.removeAttribute("hidden");
-  //         backCard.innerHTML = flashCardQA[index].answer;
-  //     }
 }); // end of combined keydown event listener for arrow up/down
-
-// document.addEventListener("keydown", function(ev) {
-//   if (ev.key === "ArrowUp") {
-//     // next question
-//     console.log(ev);
-//     backCard.setAttribute("hidden", true);
-//     frontCard.removeAttribute("hidden");
-//     index++;
-
-//     frontCard.innerHTML = flashCardQA[index].question;
-//     if (index === flashCardQA.length) {
-//       //   frontCard.innerHTML = newCardDeck[index2].question;
-//       //   index2++;
-
-//       console.log("Finished");
-//     }
-//     // Add another action === add if statement
-//   }
-//   if (ev.key === "ArrowDown") {
-//     // previous question
-//     console.log(ev);
-//     index--;
-//     backCard.setAttribute("hidden", true);
-//     frontCard.removeAttribute("hidden");
-//     frontCard.innerHTML = flashCardQA[index].question;
-//   }
-
-//   if (ev.key === "Enter") {
-//     frontCard.setAttribute("hidden", true);
-//     backCard.removeAttribute("hidden");
-//     backCard.innerHTML = flashCardQA[index].answer;
-//   }
-// });
 
 // Event that triggers the population of newCardDeck
 // Create an empty deck
