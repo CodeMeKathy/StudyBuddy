@@ -1,8 +1,7 @@
 var flashCardQA = [
   {
     question: "JavaScript Fundamentals",
-    answer:
-      ""
+    answer: ""
   },
   {
     question: "What is JavaScript?",
@@ -33,49 +32,162 @@ var flashCardQA = [
 ];
 
 var frontCard = document.getElementsByClassName("frontCard")[0];
-var backCard = document.getElementsByClassName("backCard")[0]
- 
+var backCard = document.getElementsByClassName("backCard")[0];
+
 // Reference: https://stackoverflow.com/questions/19197140/javascript-append-text-into-div
 
 frontCard.innerHTML = flashCardQA[0].question;
 
-// for (var i = 0; i < flashCardQA.length; i++) { 
+// for (var i = 0; i < flashCardQA.length; i++) {
 //     console.log(flashCardQA[i])
 //     frontCard.innerHTML = flashCardQA[i].question
 //     backCard.innerHTML = flashCardQA[i].answer
 
 // }
-// // Create an index to pass through the questions in order 
+// // Create an index to pass through the questions in order
 
-let index = 0
+let index = 0;
 // let randomIndex = Math.floor(Math.random()*flashCardQA.length)
 //     // === Invokes random question generator
 
+document.addEventListener("keydown", function(ev) {
+//   debugger;
+  if (ev.key === "ArrowUp") {
+    // Kevon assisted with index +1git 
+    if (index + 1 >= flashCardQA.length) {
+    //   console.log("index is " + index);
+    //   console.log("flashCardQA.length is " + flashCardQA.length);
+      //   frontCard.innerHTML = newCardDeck[index2].question;
+      //   index2++;
+      frontCard.removeAttribute("hidden");
+      frontCard.style.background = "green";
+      frontCard.innerHTML = "ya done";
+    //   console.log("arrow up Finished at " + index);
+    } else {
+      // next question
+      console.log(ev);
+      backCard.setAttribute("hidden", true);
+      frontCard.removeAttribute("hidden");
 
-document.addEventListener('keydown', function(ev) { 
-    if (ev.key === 'ArrowUp') {
-        // next question
-        console.log(ev);
-        backCard.setAttribute('hidden', true);
-        frontCard.removeAttribute("hidden");
-        index++
-        
-        frontCard.innerHTML = flashCardQA[index].question;
-        // Add another action === add if statement
-    }
-    if (ev.key === 'ArrowDown'){
-        // previous question
-        console.log(ev);
-        index--
-        backCard.setAttribute("hidden", true);
-        frontCard.removeAttribute("hidden");
-        frontCard.innerHTML = flashCardQA[index].question;
-       
-    }
-    
-    if (ev.key === 'Enter'){
-        frontCard.setAttribute("hidden", true);
-        backCard.removeAttribute("hidden");
-    }
+      index++;
 
-})
+      frontCard.innerHTML = flashCardQA[index].question;
+    } // end of else
+  }
+  // // else {
+  // Add another action === add if statement
+
+  if (ev.key === "ArrowDown") {
+    if (index + 1 >= flashCardQA.length) {
+      
+      frontCard.removeAttribute("hidden");
+      frontCard.style.background = "green";
+      frontCard.innerHTML = "ya done";
+      console.log("arrow down Finished at " + index);
+    } else {
+      // previous question
+      console.log(ev);
+      index--;
+      backCard.setAttribute("hidden", true);
+      frontCard.removeAttribute("hidden");
+      frontCard.innerHTML = flashCardQA[index].question;
+    } // end of else
+  }
+
+  if (ev.key === "Enter") {
+    frontCard.setAttribute("hidden", true);
+    backCard.removeAttribute("hidden");
+    backCard.innerHTML = flashCardQA[index].answer;
+  }
+  //     document.addEventListener('keydown', function(ev) {
+  //     if (ev.key === 'ArrowDown'){
+  //         if (index >= flashCardQA.length) {
+  //           //   frontCard.innerHTML = newCardDeck[index2].question;
+  //           //   index2++;
+  //           frontCard.removeAttribute("hidden");
+  //           frontCard.style.background = "green";
+  //           frontCard.innerHTML = "ya done";
+  //           console.log("arrow down Finished at " + index);
+  //         } else {
+  //         // previous question
+  //         console.log(ev);
+  //         index--
+  //         backCard.setAttribute('hidden', true);
+  //         frontCard.removeAttribute('hidden');
+  //         frontCard.innerHTML = flashCardQA[index].question;
+  //         } // end of else
+
+  //     }
+
+  //     if (ev.key === 'Enter'){
+  //         frontCard.setAttribute("hidden", true);
+  //         backCard.removeAttribute("hidden");
+  //         backCard.innerHTML = flashCardQA[index].answer;
+  //     }
+}); // end of combined keydown event listener for arrow up/down
+
+// document.addEventListener("keydown", function(ev) {
+//   if (ev.key === "ArrowUp") {
+//     // next question
+//     console.log(ev);
+//     backCard.setAttribute("hidden", true);
+//     frontCard.removeAttribute("hidden");
+//     index++;
+
+//     frontCard.innerHTML = flashCardQA[index].question;
+//     if (index === flashCardQA.length) {
+//       //   frontCard.innerHTML = newCardDeck[index2].question;
+//       //   index2++;
+
+//       console.log("Finished");
+//     }
+//     // Add another action === add if statement
+//   }
+//   if (ev.key === "ArrowDown") {
+//     // previous question
+//     console.log(ev);
+//     index--;
+//     backCard.setAttribute("hidden", true);
+//     frontCard.removeAttribute("hidden");
+//     frontCard.innerHTML = flashCardQA[index].question;
+//   }
+
+//   if (ev.key === "Enter") {
+//     frontCard.setAttribute("hidden", true);
+//     backCard.removeAttribute("hidden");
+//     backCard.innerHTML = flashCardQA[index].answer;
+//   }
+// });
+
+// Event that triggers the population of newCardDeck
+// Create an empty deck
+var guessedCorrectly = [];
+var guessedIncorrectly = [];
+let index2 = 0;
+
+function wrongPile() {
+  console.log(tryAgain);
+  console.log("Sorry, that is not the correct answer.");
+  // guessedIncorrectly.push(flashCardQA[index]);
+  flashCardQA.push(flashCardQA[index]);
+
+  // guessedIncorrectly.push(flashCardQA)
+  //
+  // })
+  // console.log(this);
+}
+
+var tryAgain = document.getElementsByClassName("guessedWrong")[0];
+tryAgain.addEventListener("click", wrongPile);
+// if (flashCardQA.question[] !== flashCardQA.answer[]) {
+//     console.log('Sorry, that is not the correct answer.')
+//     newCardDeck.push(flashCardQA)
+//     console.log(newCardDeck)
+// }
+
+// Is a user response or key entry to indicate incorrect response?
+if (flashCardQA === flashCardQA.length) {
+  frontCard.innerHTML = newCardDeck[index2].question;
+  index2++;
+}
+//else frontCard.innerHTML = flashCardQA[index].question;
