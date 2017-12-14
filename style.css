@@ -26,7 +26,8 @@ header {
     width: 420px;
     border-radius: 20%;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    /* display: none; */
 }
 
 main {

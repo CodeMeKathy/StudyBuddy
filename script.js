@@ -87,6 +87,7 @@ document.addEventListener('keydown', function(ev) {
       frontCard.style.background = '#ffffff';
     //   frontCard.innerHTML = 'Hit reset and lets play again';
     frontCard.innerHTML = "Reload the page and let's play again";
+    //add to qa
       console.log("arrow down Finished at " + index);
     } else {
       // previous question
