@@ -1,33 +1,43 @@
 var flashCardQA = [
   {
-    question: "JavaScript Fundamentals",
-    answer: ""
+    question: 'Welcome to learning JavaScript Fundamentals',
+    answer: ''
   },
   {
-    question: "What is JavaScript?",
+    question: 'What is JavaScript?',
     answer:
-      "JavaScript (JS) is a programming language mostly used client-side to dynamically script webpages, but often also server -side, using packages such as Node.js."
+      'JavaScript (JS) is a programming language mostly used client-side to dynamically script webpages, but often also server -side, using packages such as Node.js.'
   },
   {
-    question: "What is a Node?",
+    question: 'What is a Node?',
     answer:
       "Node is an interface from which a number of DOM API object types inherit; it allows these various types to be treated similarly, for example inheriting the same set of methods, or being tested in the same way."
   },
   {
     question:
-      "What is a function declaration compared to a function expression?",
+      'What is a function declaration compared to a function expression?',
     answer:
-      '"declaration: function myFunc(){ ... } expression: var myFunc = function() { ...}"'
+      'declaration: function myFunc(){ ... } expression: var myFunc = function() { ...}'
   },
   {
-    question: "What is a callback function?",
+    question: 'What is a callback function?',
     answer:
-      "A callback function is any function to be called at a later time, whether by the browser in the event-handling phase or by other code"
+      'A callback function is any function to be called at a later time, whether by the browser in the event-handling phase or by other code.'
   },
   {
-    question: "What is a closure?",
+    question: 'What is a closure?',
     answer:
-      "A closure is a function that closes over its environment. It has access to the state of the environment, but the variables inside the closure are private.\n Example: (function (){var scopeVar = 'Hello';\n (function closure(){ var closureVar = ' World'; console.log(scopeVar + closureVar);\n })();\n})();\n scope Var is accessible inside the outer and the inner function, but closureVar is only accessible inside the inner function."
+      "A closure is a function that closes over its environment. It has access to the state of the environment, but the variables inside the closure are private. \n Example: (function (){var scopeVar = 'Hello'; \n (function closure(){ var closureVar = ' World'; console.log(scopeVar + closureVar); \n })(); \n })(); \n scope Var is accessible inside the outer and the inner function, but closureVar is only accessible inside the inner function."
+  },
+  {
+    question: 'What is the DOM?',
+    answer:
+      'DOM (for Document Object Model) is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents.'
+  },
+  {
+    question: 'What is jQuery?',
+    answer:
+      'DOM (for Document Object Model) is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents.'
   }
 ];
 
@@ -37,6 +47,8 @@ var backCard = document.getElementsByClassName('backCard')[0];
 // Reference: https://stackoverflow.com/questions/19197140/javascript-append-text-into-div
 
 frontCard.innerHTML = flashCardQA[0].question;
+// Hide backCard at loading
+// backCard.innerHTML.removeAttribute('hidden');
 
 // // Create an index to pass through the questions in order
 
