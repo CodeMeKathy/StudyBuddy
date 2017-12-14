@@ -31,8 +31,8 @@ var flashCardQA = [
   }
 ];
 
-var frontCard = document.getElementsByClassName("frontCard")[0];
-var backCard = document.getElementsByClassName("backCard")[0];
+var frontCard = document.getElementsByClassName('frontCard')[0];
+var backCard = document.getElementsByClassName('backCard')[0];
 
 // Reference: https://stackoverflow.com/questions/19197140/javascript-append-text-into-div
 
@@ -44,47 +44,43 @@ let index = 0;
 // let randomIndex = Math.floor(Math.random()*flashCardQA.length)
 //     // === Invokes random question generator
 
-document.addEventListener("keydown", function(ev) {
+document.addEventListener('keydown', function(ev) {
 
-  if (ev.key === "ArrowUp") {
+  if (ev.key === 'ArrowUp') {
     // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
-    //   console.log("index is " + index);
-    //   console.log("flashCardQA.length is " + flashCardQA.length);
-      //   frontCard.innerHTML = newCardDeck[index2].question;
-      //   index2++;
-      frontCard.removeAttribute("hidden");
-      frontCard.style.background = "green";
-      frontCard.innerHTML = "ya done";
-    //   console.log("arrow up Finished at " + index);
+    //   console.log('index is ' + index);
+    //   console.log('flashCardQA.length is ' + flashCardQA.length);
+      frontCard.removeAttribute('hidden');
+      frontCard.style.background = 'pink';
+      frontCard.innerHTML = 'Thank you for playing. Come Again';
+    //   console.log('arrow up Finished at ' + index);
     } else {
       // next question
       console.log(ev);
-      backCard.setAttribute("hidden", true);
-      frontCard.removeAttribute("hidden");
+      backCard.setAttribute('hidden', true);
+      frontCard.removeAttribute('hidden');
 
       index++;
 
       frontCard.innerHTML = flashCardQA[index].question;
     } // end of else
   }
-  // // else {
-  // Add another action === add if statement
 
   if (ev.key === 'ArrowDown') {
     // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
       
       frontCard.removeAttribute('hidden');
-      frontCard.style.background = 'pink';
-      frontCard.innerHTML = 'ya done';
-      console.log("arrow down Finished at " + index);
+    //   frontCard.style.background = '#ffffff';
+    //   frontCard.innerHTML = 'ya done';
+    //   console.log("arrow down Finished at " + index);
     } else {
       // previous question
       console.log(ev);
       index--;
       backCard.setAttribute('hidden', true);
-      frontCard.removeAttribute("hidden");
+      frontCard.removeAttribute('hidden');
       frontCard.innerHTML = flashCardQA[index].question;
     } // end of else
   }
@@ -100,31 +96,15 @@ document.addEventListener("keydown", function(ev) {
 // Create an empty deck
 var guessedCorrectly = [];
 var guessedIncorrectly = [];
-let index2 = 0;
 
+// Quet assisted with wrongPile function
 function wrongPile() {
   console.log(tryAgain);
-  console.log("Sorry, that is not the correct answer.");
-  // guessedIncorrectly.push(flashCardQA[index]);
+  console.log('Sorry, that is not the correct answer.');
   flashCardQA.push(flashCardQA[index]);
-
-  // guessedIncorrectly.push(flashCardQA)
-  //
-  // })
-  // console.log(this);
 }
 
-var tryAgain = document.getElementsByClassName("guessedWrong")[0];
-tryAgain.addEventListener("click", wrongPile);
-// if (flashCardQA.question[] !== flashCardQA.answer[]) {
-//     console.log('Sorry, that is not the correct answer.')
-//     newCardDeck.push(flashCardQA)
-//     console.log(newCardDeck)
-// }
+var tryAgain = document.getElementsByClassName('guessedWrong')[0];
+tryAgain.addEventListener('click', wrongPile);
 
-// Is a user response or key entry to indicate incorrect response?
-if (flashCardQA === flashCardQA.length) {
-  frontCard.innerHTML = newCardDeck[index2].question;
-  index2++;
-}
-//else frontCard.innerHTML = flashCardQA[index].question;
+
