@@ -84,9 +84,10 @@ document.addEventListener('keydown', function(ev) {
     if (index + 1 >= flashCardQA.length) {
       
       frontCard.removeAttribute('hidden');
-    //   frontCard.style.background = '#ffffff';
-    //   frontCard.innerHTML = 'ya done';
-    //   console.log("arrow down Finished at " + index);
+      frontCard.style.background = '#ffffff';
+    //   frontCard.innerHTML = 'Hit reset and lets play again';
+    frontCard.innerHTML = "Reload the page and let's play again";
+      console.log("arrow down Finished at " + index);
     } else {
       // previous question
       console.log(ev);
