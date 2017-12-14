@@ -52,7 +52,7 @@ document.addEventListener('keydown', function(ev) {
     //   console.log('index is ' + index);
     //   console.log('flashCardQA.length is ' + flashCardQA.length);
       frontCard.removeAttribute('hidden');
-      frontCard.style.background = 'pink';
+      frontCard.style.background = "#7986cb";
       frontCard.innerHTML = 'Thank you for playing. Come Again';
     //   console.log('arrow up Finished at ' + index);
     } else {
