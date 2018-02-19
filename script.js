@@ -39,7 +39,6 @@ var flashCardQA = [
     answer:
       'DOM (for Document Object Model) is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents.'
   }
-  
 ];
 
 var frontCard = document.getElementsByClassName('frontCard')[0];
@@ -57,17 +56,17 @@ let index = 0;
 // let randomIndex = Math.floor(Math.random()*flashCardQA.length)
 //     // === Invokes random question generator
 
-document.addEventListener('keydown', function(ev) {
+document.addEventListener('keydown', function (ev) {
 
   if (ev.key === 'ArrowUp') {
     // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
-    //   console.log('index is ' + index);
-    //   console.log('flashCardQA.length is ' + flashCardQA.length);
+      //   console.log('index is ' + index);
+      //   console.log('flashCardQA.length is ' + flashCardQA.length);
       frontCard.removeAttribute('hidden');
       frontCard.style.background = "#7986cb";
       frontCard.innerHTML = 'Thank you for playing. Come Again';
-    //   console.log('arrow up Finished at ' + index);
+      //   console.log('arrow up Finished at ' + index);
     } else {
       // next question
       console.log(ev);
@@ -83,12 +82,12 @@ document.addEventListener('keydown', function(ev) {
   if (ev.key === 'ArrowDown') {
     // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
-      
+
       frontCard.removeAttribute('hidden');
       frontCard.style.background = '#ffffff';
-    //   frontCard.innerHTML = 'Hit reset and lets play again';
-    frontCard.innerHTML = 'Reload the page and let's play again';
-    // Try adding to flashCardQA
+      //   frontCard.innerHTML = 'Hit reset and lets play again';
+      frontCard.innerHTML = "Reload the page and let's play again";
+      //add to qa
       console.log("arrow down Finished at " + index);
     } else {
       // previous question
@@ -121,5 +120,3 @@ function wrongPile() {
 
 var tryAgain = document.getElementsByClassName('guessedWrong')[0];
 tryAgain.addEventListener('click', wrongPile);
-
-
