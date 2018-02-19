@@ -39,6 +39,7 @@ var flashCardQA = [
     answer:
       'DOM (for Document Object Model) is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents.'
   }
+  
 ];
 
 var frontCard = document.getElementsByClassName('frontCard')[0];
@@ -86,8 +87,8 @@ document.addEventListener('keydown', function(ev) {
       frontCard.removeAttribute('hidden');
       frontCard.style.background = '#ffffff';
     //   frontCard.innerHTML = 'Hit reset and lets play again';
-    frontCard.innerHTML = "Reload the page and let's play again";
-    //add to qa
+    frontCard.innerHTML = 'Reload the page and let's play again';
+    // Try adding to flashCardQA
       console.log("arrow down Finished at " + index);
     } else {
       // previous question
