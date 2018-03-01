@@ -28,9 +28,9 @@ Once deployed, to operate from your local machine:
 - Reload the page to play again!
 
 ## Future iterations will include a
-[] The option to add custom vocabulary, for the user to add their own study terms to the application.
-[] Scoring - As the user gets terms right and wrong both scores will be tallied and reflected on the screen. 
-[] The ability to add a user and save your progress along with custom decks of flashcards.
+* [ ] The option to add custom vocabulary, for the user to add their own study terms to the application.
+* [ ] Scoring - As the user gets terms right and wrong both scores will be tallied and reflected on the screen. 
+* [ ] The ability to add a user and save your progress along with custom decks of flashcards.
 
 ## Contributions 
 
