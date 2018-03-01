@@ -1,16 +1,41 @@
 # StudyBuddy
 ### ***A flashcard learning tool..***
 
-StudyBuddy was Designed with HTML, CSS, JavaScript and <span style="color:red;">&#10084;</span> by Lotus Designs.  This simple approach and design helps enable the user to easily scan through terms and questions to enhance their learning experience. 
+## Getting Started
 
-To begin your StudyBuddy experience, please visit [StudyBuddy]( https://git.generalassemb.ly/pages/Kathy145/StudyBuddy/).
+This web application was created with simplicity in mind.  Developed with JavaScript, HTML and CSS. Clone and download this repository to your system to play with it yourself.  JavaScript is embeded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-#### Instructions
-- Use the 'keyup' button to flip to the next card in sequence. 
+To begin your StudyBuddy dev experience, visit [StudyBuddy]( https://github.com/Kathy145/StudyBuddy) to clone and download to your machine.
+
+## Deployment
+
+To access the deployed application, [visit]( https://kathy145.github.io/StudyBuddy/).
+
+## Built With
+
+* [JavaScript](https://www.javascript.com/) - Provides the functionality of moving through the vocabulary. 
+* [HTML](https://html.com/) - The web application structural framework
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used to syle and design the application.
+
+## Instructions
+
+Once deployed, to operate from your local machine:
+
+- Use the 'key-up' button to flip to the next card in sequence. 
 - Once you believe you have the correct answer, press 'enter' to see if you are correct. 
 - If you feel your answer matches that of the pink flashcard then select correct answer.  If not, please select incorrect answer. 
-- To return to a previous flashcard, press 'keydown'.
+- To return to a previous flashcard, press 'key-down'.
 - Reload the page to play again!
-#### Contributions 
+
+## Future iterations will include a
+[] The option to add custom vocabulary, for the user to add their own study terms to the application.
+[] Scoring - As the user gets terms right and wrong both scores will be tallied and reflected on the screen. 
+[] The ability to add a user and save your progress along with custom decks of flashcards.
+
+## Contributions 
 
 Additional features are welcome via a pull request.  For example, the ability for student to add their own content and create customized flash cards.  Please be considerate, we adhere to KISS (Keep It Stupid Simple) and DRY (Don't Repeat Yourself) principles.  Also, remember to use and follow [Sandi Metz's methodology](https://robots.thoughtbot.com/sandi-metz-rules-for-developers). 
+
+## Authors
+
+Designed with HTML, CSS, JavaScript and <span style="color:red;">&#10084;</span> by Lotus Designs.
