@@ -5,11 +5,12 @@
 
 This web application was created with simplicity in mind.  Developed with JavaScript, HTML and CSS. Clone and download this repository to your system to play with it yourself.  JavaScript is embeded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-To begin your StudyBuddy dev experience, visit [StudyBuddy]( https://github.com/Kathy145/StudyBuddy) to clone and download to your machine.
+Begin your StudyBuddy dev experience, by visiting the [the GitHub repository]( https://github.com/Kathy145/StudyBuddy) to clone and download to your machine.
 
 ## Deployment
 
-To access the deployed application, [visit]( https://kathy145.github.io/StudyBuddy/).
+To access the deployed application, please visit [the GitHub repository]( https://kathy145.github.io/StudyBuddy/).
+
 
 ## Built With
 
@@ -27,7 +28,7 @@ Once deployed, to operate from your local machine:
 - To return to a previous flashcard, press 'key-down'.
 - Reload the page to play again!
 
-## Future iterations will include a
+## Future iterations will include
 * [ ] The option to add custom vocabulary, for the user to add their own study terms to the application.
 * [ ] Scoring - As the user gets terms right and wrong both scores will be tallied and reflected on the screen. 
 * [ ] The ability to add a user and save your progress along with custom decks of flashcards.
