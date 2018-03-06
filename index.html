@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>StudyBuddy</h1>
-            <h3>A flashcard learning tool.</h3>
-        </header>
 
-        <main>
-            <div class="flashCard">
-                
-            <div class='frontCard'>
-                
-            </div>
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
 
-            <div hidden class='backCard'>
-                
-            </div>
-            <div class='buttons'>
-                <button class="guessedAnswer">Correct Answer</button>
-                <button class="guessedWrong">Incorrect Answer</button>
-            </div>
-            
-            </div>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <title>Study Buddy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+</head>
 
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper cyan darken-1">
+        <a href="#" class="brand-logo right">Study Buddy</a>
+        <ul id="nav-mobile" class="right hide-on-sm-and-down">
+          <!-- <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li> -->
+      </div>
+    </nav>
+    <!-- <h1>StudyBuddy</h1> -->
+    <h6 class="sub-title">A flashcard learning tool.</h6>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="inst">
+        <h4>Want to play?</h4>
+        <p>Use the <strong>'Up-Key'</strong> button to flip to the next card in sequence. Once you believe you have the correct answer, press <strong>'Enter'</strong> to see if you are correct.</p>
+        <p> If your answer matches that of the pink flashcard then select correct
+          answer. If not, please select incorrect answer.</p>
+        <p> Press the <strong>'Down-Key'</strong>, if you need to return to a previous card.</p>
+        <p> Want to play again? ... Reload the page for endless fun! </p>
+      </div>
+      <div class="container">
+        <div class="col s12 m9">
+          <div class="center">
+            <div class="center card horizontal">
+              <div class="card-stacked">
+                <div class="card-content">
+                  
+                  <div class="flashCard">
+                    
+                    <div class='frontCard'>
+                      
+                    </div>
+                    
+                    <div hidden class='backCard'>
+                      
+                    </div>
+                    <div class='buttons'>
+                      <button class="guessedAnswer">Correct Answer</button>
+                      <button class="guessedWrong">Incorrect Answer</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         </main>
 
-        <footer class="clearfix">
-            <p class="copyright">Copyright 2017</p>
-            <p class="message">Designed with
-                <span style="color:red;">&#10084;</span> by
-                <span class="name">Lotus Designs</span>
-            </p>
-        </footer>
-    
-    </body>
-    <script src="script.js"></script>
+  <footer class="clearfix">
+    <p class="copyright">© 2018 Copyright</p>
+    <p class="message">Designed with
+      <span style="color:red;">&#10084;</span> by
+      <span class="name">Lotus Designs</span>
+    </p>
+  </footer>
+
+</body>
+<script src="script.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
 </html>

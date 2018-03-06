@@ -3,7 +3,7 @@
 
 ## Getting Started
 
-This web application was created with simplicity in mind.  Developed with JavaScript, HTML and CSS. Clone and download this repository to your system to play with it yourself.  JavaScript is embeded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This web application was created with simplicity in mind.  Developed with JavaScript, HTML, CSS and designed with Materalize. Clone and download this repository to your system to play with it yourself.  JavaScript is embeded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 Begin your StudyBuddy dev experience, by visiting the [the GitHub repository]( https://github.com/Kathy145/StudyBuddy) to clone and download to your machine.
 

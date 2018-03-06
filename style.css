@@ -6,11 +6,11 @@ header {
 }
 
 .frontCard {
-    background-color: #63aada;
+    /* background-color: #63aada; */
     /* padding: 25px 0 0 50px; */
     /* padding-left: 70px;*/
     padding-right: 0;
-    padding-top: 45px;
+    padding-top: 25px;
     height: 250px;
     width: 420px;
     border-radius: 20%;
@@ -19,9 +19,9 @@ header {
 
 .backCard {
 
-    background-color: #ff69b4;
+    /* background-color: #ff69b4; */
     padding-right: 0;
-    padding-top: 45px;
+    padding-top: 25px;
     height: 250px;
     width: 420px;
     border-radius: 20%;
@@ -34,7 +34,7 @@ main {
 
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 .frontCard{
 
@@ -59,9 +59,9 @@ main {
 footer {
   
     /* margin-top: 38%; */
-    margin-top: 125px;
+    margin-top: 0px;
     /* margin-bottom: 2px; */
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 0px;
     background-color: #0d2c40;
     font-size: 14px;
     letter-spacing: .08em;
@@ -96,4 +96,50 @@ footer p {
 .name {
     color: #f15b31;
     font-weight: 100;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.sub-title {
+
+    text-align: right
+}
+
+.div.container {
+    /* margin-top: 300px; */
+    /* margin: 0 auto; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inst {
+    /* margin-left: 300px; */
+    text-align: center;
+}
+
+p {
+    display: block;
+}
+
+div.col.s12.m9 {
+
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row; */
+    
+}
+          
+div.center {
+
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.bold {
+
+    font-weight: 900;
+
 }

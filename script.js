@@ -59,12 +59,11 @@ let index = 0;
 document.addEventListener('keydown', function (ev) {
 
   if (ev.key === 'ArrowUp') {
-    // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
       //   console.log('index is ' + index);
       //   console.log('flashCardQA.length is ' + flashCardQA.length);
       frontCard.removeAttribute('hidden');
-      frontCard.style.background = "#7986cb";
+      frontCard.style.background = "#ffffff";
       frontCard.innerHTML = 'Thank you for playing. Come Again';
       //   console.log('arrow up Finished at ' + index);
     } else {
@@ -80,11 +79,11 @@ document.addEventListener('keydown', function (ev) {
   }
 
   if (ev.key === 'ArrowDown') {
-    // Kevon assisted with index + 1 index
     if (index + 1 >= flashCardQA.length) {
 
       frontCard.removeAttribute('hidden');
       frontCard.style.background = '#ffffff';
+      backCard.setAttribute('hidden', true);
       //   frontCard.innerHTML = 'Hit reset and lets play again';
       frontCard.innerHTML = "Reload the page and let's play again";
       //add to qa
@@ -111,7 +110,7 @@ document.addEventListener('keydown', function (ev) {
 var guessedCorrectly = [];
 var guessedIncorrectly = [];
 
-// Quet assisted with wrongPile function
+
 function wrongPile() {
   console.log(tryAgain);
   console.log('Sorry, that is not the correct answer.');
