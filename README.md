@@ -5,7 +5,7 @@
 
 This web application was created with simplicity in mind.  Developed with JavaScript, HTML, CSS and designed with Materialize. Clone and download this repository to your system to play with it yourself.  JavaScript is embedded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Begin your StudyBuddy dev experience, by visiting the [the GitHub repository]( https://github.com/CodeeMeKathy/StudyBuddy) to clone and download to your machine.
+Begin your StudyBuddy dev experience, by visiting the [the GitHub repository]( https://github.com/CodeMeKathy/StudyBuddy) to clone and download to your machine.
 
 ## Deployment
 
