@@ -5,18 +5,18 @@
 
 This web application was created with simplicity in mind.  Developed with JavaScript, HTML, CSS and designed with Materialize. Clone and download this repository to your system to play with it yourself.  JavaScript is embedded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Begin your StudyBuddy dev experience, by visiting the [the GitHub repository]( https://github.com/Kathy145/StudyBuddy) to clone and download to your machine.
+Begin your StudyBuddy dev experience, by visiting the [the GitHub repository]( https://github.com/CodeeMeKathy/StudyBuddy) to clone and download to your machine.
 
 ## Deployment
 
-To access the deployed application, please visit [the GitHub repository]( https://kathy145.github.io/StudyBuddy/).
+To access the deployed application, please visit [the GitHub repository]( https://CodeMeKathy.github.io/StudyBuddy/).
 
 
 ## Built With
 
 * [JavaScript](https://www.javascript.com/) - Provides the functionality of moving through the vocabulary. 
 * [HTML](https://html.com/) - The web application structural framework
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used to syle and design the application.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used to style and design the application.
 
 ## Instructions
 
